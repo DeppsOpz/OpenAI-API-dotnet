@@ -34,7 +34,7 @@ jobs:
               dotnet tool install -g trx2junit
               trx2junit ./OpenAI_Tests/TestResults/*.trx
       - store_test_results:
-          path: tests/TestResults
+          path: ./OpenAI_Tests/TestResults
     
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
